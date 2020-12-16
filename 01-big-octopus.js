@@ -17,15 +17,15 @@ function linearBiggestFish(fishes) {
 	let longest = ''
 	for (let i = 0; i < fishes.length; i++) {
 		if (fishes[i].length > longest.length) longest = fishes[i]
-        // if (longest.length > fishes[i].length) {
-        //     longest = longest
-        // } else {
-        //     longest = fishes[i].length
+		// if (longest.length > fishes[i].length) {
+		//     longest = longest
+		// } else {
+		//     longest = fishes[i].length
 		//*     / This ternary does this ^^^
-        //*     longest = longest.length > fishes[i].length ? longest : fishes[i]
-        // }
-return longest
-
+		//*     longest = longest.length > fishes[i].length ? longest : fishes[i]
+		// }
+	}
+	return longest
 }
 
 tilesArray = ['up', 'right-up', 'right', 'right-down', 'down', 'left-down', 'left', 'left-up']
