@@ -28,10 +28,15 @@ function linearBiggestFish(fishes) {
     return longest
 }
 
-tilesArray = ['up', 'right-up', 'right', 'right-down', 'down', 'left-down', 'left', 'left-up']
+tilesArray = ['up', 'right-up', 'right', 'right-down', 'down', 'left-down', 'left', 'left-up'];
+console.log(slowDance('down', tilesArray))
 
 function slowDance(direction, tilesArray) {
-    // Code goes here ...
+    for (let i = 0; i < tilesArray.length; i++) {
+        if (tilesArray[i] === direction) {
+            return i
+        }
+    }
 }
 
 tilesObj = {
